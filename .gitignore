@@ -2,7 +2,8 @@
 *.csv
 *.zip
 
-
+# Ignore the project files
+lab1/.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
