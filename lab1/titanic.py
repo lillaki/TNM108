@@ -169,15 +169,15 @@ KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=600,
     random_state=None, tol=0.0001, verbose=0)
 
 correct = 0
-for i in range(len(X)):
-    predict_me = np.array(X[i].astype(float))
+for i in range(len(X_scaled)):
+    predict_me = np.array(X_scaled[i].astype(float))
     predict_me = predict_me.reshape(-1, len(predict_me))
     prediction = kmeans.predict(predict_me)
     if prediction[0] == y[i]:
         correct += 1
 
 print('12% increase in the score')
-print(correct/len(X))
+print(correct/len(X_scaled))
 
 
 
