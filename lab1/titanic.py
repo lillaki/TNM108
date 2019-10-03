@@ -24,6 +24,8 @@ print("\n")
 print("***** Test_Set *****")
 print(test.head())
 
+
+
 # Get some initial statistics of both the train and test DataFrames
 print("***** Train_Set *****")
 print(train.describe())
@@ -83,7 +85,9 @@ g.map(plt.hist, 'Age', bins=20)
 # See how the Pclass and Survived features are related to eachother with a graph
 grid = sns.FacetGrid(train, col='Survived', row='Pclass', height=2.2, aspect=1.6)
 grid.map(plt.hist, 'Age', alpha=.5, bins=20)
-grid.add_legend(); # Den plottar ingenting, trodde man plottade med plt.grid men det fungerar ej
+grid.add_legend();
+
+plt.show()
 
 # Data types of different features that you have
 print('\n Train info:')

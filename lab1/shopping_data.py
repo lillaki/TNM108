@@ -31,8 +31,7 @@ customer_data.head()
 #Filter columns
 data = customer_data.iloc[:, 3:5].values
 
-
-cluster = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward')
+cluster = AgglomerativeClustering(n_clusters=5, affinity='euclidean', linkage='ward')
 cluster.fit_predict(data)
 
 plt.scatter(data[:, 0], data[:, 1], c=cluster.labels_, cmap='rainbow')
