@@ -1,4 +1,12 @@
 # TNM108
+Man ska läsa och förstå
+Hur implementeras den
+För och nackdelar
+Användningsområden
+När vill man använda den här algoritmen
+
+
+
 # Part 1
 Questions
 1.	What are the relevant features of the Titanic dataset. Why are they relevant?
