@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.cluster import AgglomerativeClustering
+from scipy.cluster.hierarchy import dendrogram, linkage
+from matplotlib import pyplot as plt
 import numpy as np
 
 '''Test för plottning'''
@@ -30,6 +32,14 @@ customer_data.head()
 
 #Filter columns
 data = customer_data.iloc[:, 3:5].values
+
+
+
+linked = linkage(data, 'ward')
+
+plt.figure(figsize=(10, 7))
+dendrogram(linked, orientation='top', distance_sort='descending', show_leaf_counts=True)
+plt.show()
 
 cluster = AgglomerativeClustering(n_clusters=5, affinity='euclidean', linkage='ward')
 cluster.fit_predict(data)
