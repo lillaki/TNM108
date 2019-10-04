@@ -47,6 +47,12 @@ kan man dela upp det i fem kluster. Sen blir det lite för rörigt med fler klus
 -  Man skulle vilja dela upp det i fem stycken kluster.Ett kluster i vardera hörn och sen ett kluster i mitten. Man kan se en
 ganska jämn uppdelning av olika grupper. 
 
+Fördelen med hiearkisk klustering är att man inte behöver specificera antalet kluster. Unlabeled data
+
+Nackdel är att den kan vara långsam. 
+
+Man kan få olika uppdelningar beroende på vilken nivå man tittar på.
+
 
 Part 3
 PCA är bra att använda om man jobbar med flera dimensioner. 
