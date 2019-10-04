@@ -55,4 +55,18 @@ Man kan få olika uppdelningar beroende på vilken nivå man tittar på.
 
 
 Part 3
-PCA är bra att använda om man jobbar med flera dimensioner. 
+PCA är bra att använda om man jobbar med flera dimensioner.
+
+1. Can you choose n_components=2? Can you think of some method to test this? 
+- You can check by measuring the variance ratio of the principal components. So here you can see that the first 2 components contribute to 87% of the total variance. So it’s good enough to choose only 2 components. 
+
+2. Create the scatter plot of the third principal component (that is, you combine the third
+principal component with the first and then the second principal component). What can you see with the plot? What is the difference?]
+- Resultatet vi får när vi plottar alla komponenter bredvid varandra är att komponent ’1’ kombineras bra med ’2’ och ’3’. Det blir en tydlig uppdelning mellan malignant och benign i de plottarna. Däremot blir uppdelningen inte lika bra mellan komponenterna ’2’ och ’3’.
+![First and Second](1+2.jpg)
+![First and Third](1+3.jpg)
+![Second and Third](2+3.jpg)
+
+3. Can you tell which feature contribute more towards the 1st PC? 
+- Mean concavity and mean concave points look to be the most important features for the 1st comp.
+![Part3](part3.jpg)
