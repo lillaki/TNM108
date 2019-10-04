@@ -1,5 +1,5 @@
 # TNM108
-Part 1
+# Part 1
 Questions
 1.	What are the relevant features of the Titanic dataset. Why are they relevant?
     Den data som är mest relevant är kön, klass och ålder. Den data är mest relevant då dessa parametrar ger info om den
@@ -33,7 +33,7 @@ Nackdelar
     det värde man ska ha på K. 
 
 
-Part 2
+# Part 2
 
 1. How many clusters do you have? Explain your answer.
 -  Man kan antingen dela upp det i tre olika kluster, om man drar den horisontella linjen så den krossar de blå linjerna. Eller så
@@ -54,7 +54,7 @@ Nackdel är att den kan vara långsam.
 Man kan få olika uppdelningar beroende på vilken nivå man tittar på.
 
 
-Part 3
+# Part 3
 PCA är bra att använda om man jobbar med flera dimensioner.
 
 1. Can you choose n_components=2? Can you think of some method to test this? 
